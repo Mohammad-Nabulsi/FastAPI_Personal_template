@@ -1,0 +1,12 @@
+fastapi==0.115.6
+uvicorn==0.34.0
+pydantic==2.10.5
+python-dotenv==1.0.1
+
+# PyTorch stack
+torch==2.2.2
+torchvision==0.17.2
+
+# Image and uplaod
+python-multipart==0.0.20
+pillow==11.1.0
