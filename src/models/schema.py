@@ -1,17 +1,10 @@
 from pydantic import BaseModel
 
+class PredictionResponse(BaseModel):
+        base_name: str
+        class_index: int
+        class_name: str
+        confidence: float
 
-
-
-
-
-
-
-
-# =================
-### Example
-
-        # class predictionResponse(BaseModel):
-        #     class_index: int
-        #     class_prediction: str
-        #     confidence: float
+class PredictionsResponse(BaseModel):
+        predictions: list[PredictionResponse]
